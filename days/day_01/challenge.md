@@ -4,7 +4,7 @@
  
 Découvrir comment récupérer des données dans une table avec la commande SELECT.
  
----
+--- 
  
 ## Étape 1 : Créer la table
  

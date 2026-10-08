@@ -6,7 +6,7 @@ Maîtriser la sélection de colonnes spécifiques, l'utilisation des alias, et l
 ---
 
 ## Exercices pratiques
-
+ 
 1. **Sélection globale** : Afficher toutes les colonnes de la table `clients` à l'aide de l'étoile `*`.
 2. **Colonne unique** : Afficher uniquement le nom des clients.
 3. **Multi-colonnes** : Afficher le nom et la ville des clients.

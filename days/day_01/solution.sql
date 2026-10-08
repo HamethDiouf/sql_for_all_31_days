@@ -7,7 +7,7 @@ CREATE TABLE clients (
     ville TEXT,
     age INT,
     email VARCHAR(100)
-);
+); 
 
 -- Insertion de données dans la table clients
 INSERT INTO clients VALUES

@@ -9,7 +9,7 @@ FROM clients;
 -- Afficher une seule colonne (nom)
 SELECT nom 
 FROM clients;
-
+ 
 -- Afficher plusieurs colonnes (nom, ville)
 SELECT nom, ville 
 FROM clients;
@@ -27,6 +27,7 @@ FROM clients;
 SELECT c.nom, c.email 
 FROM clients AS c;
 
--- Exercice 7 : Afficher les villes uniques sans doublon
+-- Afficher les villes uniques sans doublon
 SELECT DISTINCT ville 
 FROM clients;
+
