@@ -25,7 +25,7 @@ FROM clients;
 
 -- Utiliser un alias de table
 SELECT c.nom, c.email 
-FROM clients AS c;
+FROM clients AS c; 
 
 -- Afficher les villes uniques sans doublon
 SELECT DISTINCT ville 

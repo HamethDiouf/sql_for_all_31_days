@@ -2,7 +2,7 @@
 SELECT * FROM clients;
 
 -- Affichage des colonnes ville et nom de la table clients
-SELECT nom, ville FROM clients;
+SELECT nom, ville FROM clients; 
 
 -- changement de l'ordre des colonnes dans la sélection
 SELECT ville, nom FROM clients;

@@ -3,7 +3,7 @@
 ## Objectif
 Maîtriser la sélection de colonnes spécifiques, l'utilisation des alias, et la suppression des doublons avec `DISTINCT`.
 
----
+--- 
 
 ## Exercices pratiques
  
