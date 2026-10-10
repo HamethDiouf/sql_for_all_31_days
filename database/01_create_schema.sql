@@ -25,7 +25,8 @@ CREATE TABLE produits (
     id_produit INT PRIMARY KEY,
     nom_produit TEXT NOT NULL,
     categorie TEXT,
-    prix DECIMAL(5,2)
+    prix DECIMAL(5,2),
+    marque TEXT
 );
 
 -- 4. Table ventes (avec clés étrangères vers clients, produits et magasins)

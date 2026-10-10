@@ -1,26 +1,38 @@
 -- Insertion des clients (11 clients du cours du Jour 3)
-INSERT INTO clients (id_client, nom, ville, age, email) VALUES
+INSERT INTO clients VALUES
 (1, 'Paul', 'Paris', 25, 'paul@mail.com'),
 (2, 'Sarah', 'Lyon', 31, 'sarah@mail.com'),
 (3, 'Marc', 'Lille', 28, 'marc@mail.com'),
 (4, 'Léa', 'Paris', 24, 'lea@mail.com'),
 (5, 'Karim', 'Lyon', 35, 'karim@mail.com'),
-(6, 'Inès', 'Lille', 29, 'ines@mail.com'),
+(6, 'Inès', 'Lille', 29, 'ines@mail.com');
+
+-- Insertion de nouveaux clients (7 et 8) pour le Jour 1
+INSERT INTO clients VALUES
 (7, 'Hugo', 'Paris', 41, 'hugo@mail.com'),
-(8, 'Nina', 'Marseille', 33, 'nina@mail.com'),
+(8, 'Nina', 'Marseille', 33, 'nina@mail.com');
+
+
+-- Insertion de nouveaux clients (9 à 11) pour le Jour 3
+INSERT INTO clients VALUES
 (9, 'Yanis', 'Lyon', 30, 'yanis@mail.com'),
 (10, 'Chloé', 'Paris', 35, 'chloe@mail.com'),
 (11, 'Omar', 'Lille', 44, 'omar@mail.com');
 
+-- Insertion de nouveaux clients (12 et 13) pour le Jour 3
+INSERT INTO clients VALUES
+(12, 'Alice', 'Paris', 27, 'alice@mail.com'),
+(13, 'Amine', 'Lyon', 38, NULL);
+
 -- Insertion des magasins
-INSERT INTO magasins (id_magasin, nom, ville) VALUES
+INSERT INTO magasins VALUES
 (1, 'Paris Centre', 'Paris'),
 (2, 'Lyon Part-Dieu', 'Lyon'),
 (3, 'Lille Gare', 'Lille'),
 (4, 'Marseille Vieux-Port', 'Marseille');
 
 -- Insertion des produits
-INSERT INTO produits (id_produit, nom_produit, categorie, prix) VALUES
+INSERT INTO produits VALUES
 (1, 'Baguette', 'Boulangerie', 1.10),
 (2, 'Croissant', 'Boulangerie', 1.20),
 (3, 'Lait', 'Laitier', 1.05),
@@ -31,7 +43,7 @@ INSERT INTO produits (id_produit, nom_produit, categorie, prix) VALUES
 (8, 'Cookies', 'Biscuits', 2.90);
 
 -- Insertion des ventes
-INSERT INTO ventes (id_vente, id_client, id_produit, id_magasin, date_vente, quantite) VALUES
+INSERT INTO ventes VALUES
 (1, 1, 1, 1, '2025-01-05', 3),
 (2, 2, 3, 2, '2025-01-08', 2),
 (3, 3, 4, 3, '2025-01-12', 1),
