@@ -17,7 +17,8 @@ CREATE TABLE clients (
 CREATE TABLE magasins (
     id_magasin INT PRIMARY KEY,
     nom TEXT NOT NULL,
-    ville TEXT
+    ville TEXT,
+    surface INT
 );
 
 -- 3. Table produits

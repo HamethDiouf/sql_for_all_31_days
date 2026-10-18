@@ -28,7 +28,8 @@ WHERE age BETWEEN 30 AND 40;
 -- Produits dont le prix est compris entre 2 et 3 €
 SELECT * 
 FROM produits 
-WHERE prix BETWEEN 2 AND 3;
+WHERE prix BETWEEN 2 AND 3
+ORDER BY prix DESC;
 
 -- Ventes de février 2026
 SELECT * 

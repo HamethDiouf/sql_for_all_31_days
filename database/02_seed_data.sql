@@ -26,10 +26,12 @@ INSERT INTO clients VALUES
 
 -- Insertion des magasins
 INSERT INTO magasins VALUES
-(1, 'Paris Centre', 'Paris'),
-(2, 'Lyon Part-Dieu', 'Lyon'),
-(3, 'Lille Gare', 'Lille'),
-(4, 'Marseille Vieux-Port', 'Marseille');
+(1, 'Paris Centre', 'Paris', 1200),
+(2, 'Lyon Part-Dieu', 'Lyon', 2100),
+(3, 'Lille Gare', 'Lille', 850),
+(4, 'Marseille Vieux-Port', 'Marseille', 1500),
+(5, 'Bordeaux Lac', 'Bordeaux', 2600),
+(6, 'Nantes Centre', 'Nantes', 1800);
 
 -- Insertion des produits
 INSERT INTO produits VALUES
