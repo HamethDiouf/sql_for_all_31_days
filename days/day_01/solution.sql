@@ -12,4 +12,5 @@ SELECT ville, nom FROM clients;
 SELECT * FROM clients;
 
 -- Faire une erreur volontaire
-SELECT nom, ville FORM clients; -- erreur de syntaxe sur ou près de « clients »
+SELECT nom, ville 
+FORM clients; -- erreur de syntaxe sur ou près de « clients »

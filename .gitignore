@@ -1,0 +1,20 @@
+# --- Éditeurs de code ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Système d'exploitation ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Environnement et secrets ---
+.env
+.env.local
+*.log
+
+# --- Bases de données locales / Sauvegardes temporaires ---
+*.sql~
+*.bak
+dump.sql

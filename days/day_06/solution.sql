@@ -78,7 +78,7 @@ FROM lignes_vente
 WHERE quantite > 1
 ORDER BY montant_total DESC;
 
--- Le podium des 3 lignes ayant généré le plus gros montant après remise (PostgreSQL)
+-- Le podium des 3 lignes ayant généré le plus gros montant après remise
 SELECT 
     id_ligne, 
     id_produit,
