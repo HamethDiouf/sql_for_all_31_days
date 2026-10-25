@@ -7,7 +7,6 @@ SELECT nom, ville FROM clients;
 -- changement de l'ordre des colonnes dans la sélection
 SELECT ville, nom FROM clients;
 
-
 -- Sélection de toutes les données de la table clients
 SELECT * FROM clients;
 
