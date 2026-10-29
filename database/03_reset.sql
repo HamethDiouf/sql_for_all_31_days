@@ -1,9 +1,11 @@
 -- ==========================================
 -- 03_reset.sql - Réinitialisation complète et Seeds (PostgreSQL)
+-- Mis à jour avec les données du Jour 10 (17 produits, 10 ventes, 22 lignes)
 -- ==========================================
 
+-- ==========================================
 -- 1. Nettoyage de l'existant (dans l'ordre inverse des dépendances)
-DROP TABLE IF EXISTS emplacements CASCADE;
+-- ==========================================DROP TABLE IF EXISTS emplacements CASCADE;
 DROP TABLE IF EXISTS lignes_vente CASCADE;
 DROP TABLE IF EXISTS ventes CASCADE;
 DROP TABLE IF EXISTS produits CASCADE;
@@ -28,7 +30,7 @@ CREATE TABLE clients (
 -- 2. Table magasins
 CREATE TABLE magasins (
     id_magasin INT PRIMARY KEY,
-    nom TEXT NOT NULL,
+    nom_magasin TEXT NOT NULL,
     ville TEXT,
     surface INT
 );
@@ -53,7 +55,8 @@ CREATE TABLE ventes (
     id_vente INT PRIMARY KEY,
     id_client INT REFERENCES clients(id_client),
     id_magasin INT REFERENCES magasins(id_magasin),
-    date_vente DATE
+    date_vente DATE,
+    mode_paiement TEXT
 );
 
 -- 6. Table lignes_vente (détail des articles par ticket)
@@ -80,7 +83,7 @@ CREATE TABLE emplacements (
 -- 3. Ré-insertion des données de référence (Seeds)
 -- ==========================================
 
--- A. Clients (13 clients avec prénom et nom)
+-- A. Clients (13 clients)
 INSERT INTO clients VALUES
 (1, 'Paul', 'Martin', 'Paris', 25, 'paul@mail.com'),
 (2, 'Sarah', 'Cohen', 'Lyon', 31, 'sarah@mail.com'),
@@ -108,16 +111,16 @@ INSERT INTO magasins VALUES
 -- C. Catégories (6 catégories)
 INSERT INTO categories VALUES
 (1, 'Boulangerie'),
-(2, 'Laitier'),
+(2, 'Produits laitiers'),
 (3, 'Boissons'),
-(4, 'Épicerie'),
-(5, 'Biscuits'),
-(6, 'Fruits');
+(4, 'Epicerie salee'),
+(5, 'Epicerie sucree'),
+(6, 'Fruits et legumes');
 
--- D. Produits (15 produits reliés aux catégories par id_categorie)
+-- D. Produits (17 produits - incluant les produits 16 et 17 jamais vendus)
 INSERT INTO produits VALUES
 (1, 'Baguette tradition', 1, 1.10, 'Boulco'),
-(2, 'Croissant Beurre', 1, 1.20, 'Boulco'),
+(2, 'Croissant beurre', 1, 1.20, 'Boulco'),
 (3, 'Lait demi-écrémé 1L', 2, 1.05, 'LaitPur'),
 (4, 'Yaourt nature x4', 2, 2.30, 'LaitPur'),
 (5, 'Fromage râpé 200g', 2, 2.80, NULL),
@@ -130,26 +133,24 @@ INSERT INTO produits VALUES
 (12, 'Biscuits chocolat 300g', 5, 2.90, 'ChocoVal'),
 (13, 'Pommes 1kg', 6, 2.60, NULL),
 (14, 'Lait de coco 400ml', 4, 1.95, 'Savora'),
-(15, 'Thé vert 20 sachets', NULL, 2.75, 'Cafetia');
+(15, 'Thé vert 20 sachets', NULL, 2.75, 'Cafetia'),
+(16, 'Miel acacia 250g', 4, 5.90, 'ApiBon'),
+(17, 'Huile olive 1L', 4, 6.50, NULL);
 
--- E. Ventes (En-têtes de tickets - 14 ventes)
+-- E. Ventes (10 ventes de référence avec mode de paiement)
 INSERT INTO ventes VALUES
-(1, 1, 1, '2026-01-03'),
-(2, 2, 2, '2026-01-10'),
-(3, 4, 1, '2026-01-15'),  
-(4, 5, 2, '2026-01-20'),
-(5, 7, 1, '2026-01-31'),
-(6, 3, 3, '2026-02-01'),
-(7, 8, 4, '2026-02-09'),
-(8, 10, 1, '2026-02-14'),
-(9, 12, 1, '2026-02-20'),
-(10, 6, 3, '2026-03-02'),
-(11, 9, 2, '2026-03-15'),
-(12, 1, 1, '2026-03-20'),
-(13, 2, 2, '2026-03-25'),
-(14, 11, 3, '2026-03-31');
+(1, 1, 1, '2026-01-03', 'Carte'),
+(2, 2, 2, '2026-01-10', 'Especes'),
+(3, 4, 1, '2026-01-15', 'Carte'), 
+(4, 5, 2, '2026-01-20', NULL),
+(5, 7, 1, '2026-01-31', 'Carte'),
+(6, 3, 3, '2026-02-01', 'Cheque'),
+(7, 8, 4, '2026-02-09', 'Carte'),
+(8, 10, 1, '2026-02-14', 'Especes'),
+(9, 1, 1, '2026-02-20', 'Carte'),
+(10, 3, 3, '2026-02-25', 'Carte');
 
--- F. Lignes de vente (Détails des articles vendus - 17 lignes)
+-- F. Lignes de vente (22 lignes de détail)
 INSERT INTO lignes_vente VALUES
 (1, 1, 1, 3, 1.10, NULL),
 (2, 1, 3, 2, 1.05, NULL),
@@ -162,12 +163,17 @@ INSERT INTO lignes_vente VALUES
 (9, 5, 7, 12, 0.80, NULL),
 (10, 5, 11, 2, 1.90, NULL),
 (11, 6, 10, 1, 2.40, NULL),
-(12, 6, 13, 3, 2.60, 15),
+(12, 6, 13, 2, 2.60, 15),
 (13, 7, 12, 5, 2.90, NULL),
 (14, 7, 14, 2, 1.95, NULL),
 (15, 8, 8, 2, 3.50, NULL),
 (16, 8, 15, 1, 2.75, 20),
-(17, 8, 1, 1, 1.10, NULL);
+(17, 8, 1, 1, 1.10, NULL),
+(18, 9, 1, 2, 1.10, NULL),
+(19, 9, 3, 1, 1.05, NULL),
+(20, 10, 7, 1, 0.80, NULL),
+(21, 10, 9, 2, 1.60, NULL),
+(22, 10, 11, 1, 1.90, NULL);
 
 -- G. Emplacements (Localisation dans les magasins)
 INSERT INTO emplacements VALUES

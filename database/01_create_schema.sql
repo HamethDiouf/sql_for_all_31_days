@@ -24,7 +24,7 @@ CREATE TABLE clients (
 -- 2. Table magasins
 CREATE TABLE magasins (
     id_magasin INT PRIMARY KEY,
-    nom TEXT NOT NULL,
+    nom_magasin TEXT NOT NULL,
     ville TEXT,
     surface INT
 );
@@ -49,7 +49,8 @@ CREATE TABLE ventes (
     id_vente INT PRIMARY KEY,
     id_client INT REFERENCES clients(id_client),
     id_magasin INT REFERENCES magasins(id_magasin),
-    date_vente DATE
+    date_vente DATE,
+    mode_paiement TEXT
 );
 
 -- 6. Table lignes_vente (détail des produits vendus par ticket)

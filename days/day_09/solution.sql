@@ -15,7 +15,7 @@ INNER JOIN clients AS c
 -- Affiche chaque vente avec le nom du magasin
 SELECT 
     v.id_vente,
-    m.nom AS nom_magasin
+    m.nom_magasin
 FROM ventes AS v
 INNER JOIN magasins AS m
     ON v.id_magasin = m.id_magasin;
@@ -47,7 +47,7 @@ SELECT
     v.id_vente,
     c.prenom,
     c.nom,
-    m.nom AS nom_magasin,
+    m.nom_magasin,
     v.date_vente
 FROM ventes AS v
 INNER JOIN clients AS c

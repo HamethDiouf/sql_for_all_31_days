@@ -1,5 +1,5 @@
 -- ==========================================
--- database/02_seed_data.sql - RetailPlus (PostgreSQL)
+-- 02_seed_data.sql - RetailPlus (PostgreSQL)
 -- ==========================================
 
 -- 1. Insertion des clients (Prénom et Nom séparés)
@@ -36,7 +36,7 @@ INSERT INTO categories VALUES
 (5, 'Biscuits'),
 (6, 'Fruits');
 
--- 4. Insertion des produits (avec id_categorie numérique)
+-- 4. Insertion des produits (17 produits, incluant les produits 16 et 17 jamais vendus)
 INSERT INTO produits VALUES
 (1, 'Baguette tradition', 1, 1.10, 'Boulco'),
 (2, 'Croissant Beurre', 1, 1.20, 'Boulco'),
@@ -52,26 +52,28 @@ INSERT INTO produits VALUES
 (12, 'Biscuits chocolat 300g', 5, 2.90, 'ChocoVal'),
 (13, 'Pommes 1kg', 6, 2.60, NULL),
 (14, 'Lait de coco 400ml', 4, 1.95, 'Savora'),
-(15, 'Thé vert 20 sachets', NULL, 2.75, 'Cafetia');
+(15, 'Thé vert 20 sachets', NULL, 2.75, 'Cafetia'),
+(16, 'Miel acacia 250g', 4, 5.90, 'ApiBon'),
+(17, 'Huile olive 1L', 4, 6.50, NULL);
 
--- 5. Insertion des ventes (En-têtes de tickets - 14 ventes)
+-- 5. Insertion des ventes (En-têtes de tickets - 14 ventes avec mode_paiement)
 INSERT INTO ventes VALUES
-(1, 1, 1, '2026-01-03'),
-(2, 2, 2, '2026-01-10'),
-(3, 4, 1, '2026-01-15'),  
-(4, 5, 2, '2026-01-20'),
-(5, 7, 1, '2026-01-31'),
-(6, 3, 3, '2026-02-01'),
-(7, 8, 4, '2026-02-09'),
-(8, 10, 1, '2026-02-14'),
-(9, 12, 1, '2026-02-20'),
-(10, 6, 3, '2026-03-02'),
-(11, 9, 2, '2026-03-15'),
-(12, 1, 1, '2026-03-20'),
-(13, 2, 2, '2026-03-25'),
-(14, 11, 3, '2026-03-31');
+(1, 1, 1, '2026-01-03', 'Carte'),
+(2, 2, 2, '2026-01-10', 'Especes'),
+(3, 4, 1, '2026-01-15', 'Carte'), 
+(4, 5, 2, '2026-01-20', NULL),
+(5, 7, 1, '2026-01-31', 'Carte'),
+(6, 3, 3, '2026-02-01', 'Cheque'),
+(7, 8, 4, '2026-02-09', 'Carte'),
+(8, 10, 1, '2026-02-14', 'Especes'),
+(9, 12, 1, '2026-02-20', 'Carte'),
+(10, 6, 3, '2026-03-02', 'Cheque'),
+(11, 9, 2, '2026-03-15', 'Carte'),
+(12, 1, 1, '2026-03-20', 'Especes'),
+(13, 2, 2, '2026-03-25', 'Carte'),
+(14, 11, 3, '2026-03-31', 'Cheque');
 
--- 6. Insertion des lignes de vente (Détails des articles par ticket)
+-- 6. Insertion des lignes de vente (22 lignes de détail des articles par ticket)
 INSERT INTO lignes_vente VALUES
 (1, 1, 1, 3, 1.10, NULL),
 (2, 1, 3, 2, 1.05, NULL),
@@ -89,7 +91,12 @@ INSERT INTO lignes_vente VALUES
 (14, 7, 14, 2, 1.95, NULL),
 (15, 8, 8, 2, 3.50, NULL),
 (16, 8, 15, 1, 2.75, 20),
-(17, 8, 1, 1, 1.10, NULL);
+(17, 8, 1, 1, 1.10, NULL),
+(18, 9, 1, 2, 1.10, NULL),
+(19, 9, 3, 1, 1.05, NULL),
+(20, 10, 7, 1, 0.80, NULL),
+(21, 10, 9, 2, 1.60, NULL),
+(22, 10, 11, 1, 1.90, NULL);
 
 -- 7. Insertion des emplacements
 INSERT INTO emplacements VALUES
