@@ -12,6 +12,8 @@ DROP TABLE IF EXISTS produits CASCADE;
 DROP TABLE IF EXISTS categories CASCADE;
 DROP TABLE IF EXISTS magasins CASCADE;
 DROP TABLE IF EXISTS clients CASCADE;
+DROP TABLE IF EXISTS emplacements CASCADE;
+DROP TABLE IF EXISTS inventaire_import CASCADE;
 
 -- ==========================================
 -- 2. Recréation des schémas des 7 tables
@@ -76,6 +78,12 @@ CREATE TABLE emplacements (
     id_produit INT REFERENCES produits(id_produit), 
     rayon TEXT, 
     etagere INT
+);
+
+-- 8. Table inventaire_import (pour le challenge final du jour 12)
+CREATE TABLE IF NOT EXISTS inventaire_import (
+    id_magasin INT,
+    site TEXT
 );
 
 
@@ -185,3 +193,9 @@ INSERT INTO emplacements VALUES
 (6, 2, 11, 'Épicerie', NULL),
 (7, 2, 8, 'Épicerie', 2),
 (8, 3, 9, 'Épicerie', 4);
+
+-- H. Inventaire_import (pour le challenge final du jour 12)
+INSERT INTO inventaire_import VALUES
+(1, 'Paris Centre'),
+(2, 'Lyon Part-Dieu'),
+(4, 'Bordeaux');
