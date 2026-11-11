@@ -1,0 +1,11 @@
+id_vente,id_client,id_magasin,date_vente,mode_paiement
+1,1,1,2026-01-03,Carte
+2,2,2,2026-01-10,Especes
+3,4,1,2026-01-15,Carte
+4,5,2,2026-01-20,
+5,7,1,2026-01-31,Carte
+6,3,3,2026-02-01,Cheque
+7,8,4,2026-02-09,Carte
+8,10,1,2026-02-14,Especes
+9,1,1,2026-02-20,Carte
+10,3,3,2026-02-25,Carte

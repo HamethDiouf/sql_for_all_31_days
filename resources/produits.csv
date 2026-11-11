@@ -1,0 +1,18 @@
+id_produit,nom_produit,id_categorie,prix,marque
+1,Baguette tradition,1,1.10,Boulco
+2,Croissant beurre,1,1.20,Boulco
+3,Lait demi-écrémé 1L,2,1.05,LaitPur
+4,Yaourt nature x4,2,2.30,LaitPur
+5,Fromage râpé 200g,2,2.80,
+6,Jus orange 1L,3,2.00,Fruitia
+7,Eau minérale 1.5L,3,0.80,AquaClair
+8,Café moulu 250g,4,3.50,Cafetia
+9,Pâtes 500g,4,1.60,Savora
+10,Riz basmati 500g,4,2.40,
+11,Chocolat noir 100g,4,1.90,ChocoVal
+12,Biscuits chocolat 300g,5,2.90,ChocoVal
+13,Pommes 1kg,6,2.60,
+14,Lait de coco 400ml,4,1.95,Savora
+15,Thé vert 20 sachets,,2.75,Cafetia
+16,Miel acacia 250g,4,5.90,ApiBon
+17,Huile olive 1L,4,6.50,

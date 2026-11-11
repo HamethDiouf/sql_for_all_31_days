@@ -1,0 +1,14 @@
+id_client,prenom,nom,ville,age,email
+1,Paul,Martin,Paris,25,paul@mail.com
+2,Sarah,Cohen,Lyon,31,sarah@mail.com
+3,Marc,Dubois,Lille,28,
+4,Léa,Bernard,Paris,24,lea@mail.com
+5,Karim,Benali,Lyon,35,karim@mail.com
+6,Inès,Moreau,Lille,29,
+7,Hugo,Petit,Paris,41,hugo@mail.com
+8,Nina,Lopez,Marseille,33,nina@mail.com
+9,Yanis,Haddad,Lyon,30,yanis@mail.com
+10,Chloé,Girard,Paris,35,chloe@mail.com
+11,Omar,Diallo,Lille,44,
+12,Alice,Fontaine,Paris,27,alice@mail.com
+13,Amine,Mansour,Lyon,38,

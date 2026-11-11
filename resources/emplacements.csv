@@ -1,0 +1,9 @@
+id_emplacement,id_magasin,id_produit,rayon,etagere
+1,1,1,Boulangerie,1
+2,1,3,Frais,2
+3,1,8,Épicerie,3
+4,1,6,Boissons,
+5,2,3,Frais,1
+6,2,11,Épicerie,
+7,2,8,Épicerie,2
+8,3,9,Épicerie,4
