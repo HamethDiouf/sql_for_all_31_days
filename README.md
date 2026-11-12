@@ -59,10 +59,27 @@ sql_for_all_31_days/
 ├── database/            # Scripts globaux (création de schéma, seed, reset)
 ├── day_01/              # Jour 1 : Introduction au SELECT et création de table
 ├── day_02/              # Jour 2 : Alias, projections et DISTINCT
-├── ...                  # Jours 03 à 18
+├── day_03/              # Jour 3 : Filtrage conditionnel avec WHERE
+├── day_04/              # Jour 4 : Opérateurs logiques (AND, OR, NOT)
+├── day_05/              # Jour 5 : Tri des résultats (ORDER BY)
+├── day_06/              # Jour 6 : Calculs arithmétiques et fonctions scalaires
+├── day_07/              # Jour 7 : Consolidation de la Semaine 1
+├── day_08/              # Jour 8 : Clés primaires, étrangères et granularité
+├── day_09/              # Jour 9 : Pratique des INNER JOIN
+├── day_10/              # Jour 10 : Pratique du LEFT JOIN
+├── day_11/              # Jour 11 : Requêtes multi-tables (MULTI-JOIN)
+├── day_12/              # Jour 12 : RIGHT JOIN, FULL OUTER JOIN et audit d'écarts
+├── day_13/              # Jour 13 : Doublons, cardinalité et diagnostic de jointure
+├── day_14/              # Jour 14 : Consolidation de la Semaine 2
+├── day_15/              # Jour 15 : Fonctions d'agrégation (COUNT, SUM, AVG, MIN, MAX)
+├── day_16/              # Jour 16 : Regroupements de données avec GROUP BY
+├── day_17/              # Jour 17 : Filtrage des groupes avec HAVING et WHERE
+├── day_18/              # Jour 18 : KPI et indicateurs business
 ├── day_19/              # Jour 19 : Dates et analyse temporelle
-│   ├── challenge.md
-│   └── solution.sql
+├── day_20/              # Jour 20 : CASE WHEN et segmentation
+├── day_21/              # Jour 21 : Consolidation Semaine 3 et mini-tableau de bord
 ├── resources/           # Ressources et datasets du challenge
 ├── PROGRESS.md          # Suivi détaillé de l'avancement
 └── README.md            # Documentation du projet
+
+> 💡 **Note de structure :** Chaque dossier `day_XX/` suit une structure standardisée et contient systématiquement un fichier de consignes (**`challenge.md`**) et un fichier de requêtes validées (**`solution.sql`**).
