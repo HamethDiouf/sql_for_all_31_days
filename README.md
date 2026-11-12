@@ -83,6 +83,8 @@ sql_for_all_31_days/
 ├── PROGRESS.md          # Suivi détaillé de l'avancement
 └── README.md            # Documentation du projet
 
-> 💡 **Note de structure :** Chaque dossier `day_XX/` suit une structure standardisée et contient systématiquement un fichier de consignes (**`challenge.md`**) et un fichier de requêtes validées (**`solution.sql`**).
+
+
+💡 Note de structure : Chaque dossier day_XX/ suit une structure standardisée et contient systématiquement un fichier de consignes (challenge.md) et un fichier de requêtes validées (solution.sql).
 
 
