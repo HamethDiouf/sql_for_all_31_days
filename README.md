@@ -52,6 +52,7 @@ Le challenge repose sur un schéma e-commerce et retail complet composé de **7 
 
 ## 📂 Structure du Dépôt
 
+
 ```text
 sql_for_all_31_days/
 │
@@ -83,3 +84,5 @@ sql_for_all_31_days/
 └── README.md            # Documentation du projet
 
 > 💡 **Note de structure :** Chaque dossier `day_XX/` suit une structure standardisée et contient systématiquement un fichier de consignes (**`challenge.md`**) et un fichier de requêtes validées (**`solution.sql`**).
+
+
