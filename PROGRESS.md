@@ -41,3 +41,4 @@ Ce fichier retrace l'état d'avancement quotidien du challenge **SQL for All**, 
 - [x] **Jour 17** : Filtrage des groupes avec `HAVING` et distinction avec `WHERE`
 - [x] **Jour 18** : KPI et indicateurs business (Chiffre d'affaires, panier moyen, taux de remise)
 - [x] **Jour 19** : Dates et analyse temporelle (Ventes par jour, mois et année)
+- [x] **Jour 20** : `CASE WHEN`, création de segments et indicateurs conditionnels
