@@ -11,8 +11,8 @@ SELECT
     quantite * prix_unitaire AS montant_brut,
     CASE 
         WHEN quantite IS NULL OR prix_unitaire IS NULL THEN 'Non classe'
-        WHEN quantite * prix_unitaire < 100 THEN 'Faible'
-        WHEN quantite * prix_unitaire < 500 THEN 'Moyen'
+        WHEN quantite * prix_unitaire < 5 THEN 'Faible'
+        WHEN quantite * prix_unitaire < 10 THEN 'Moyen'
         ELSE 'Eleve'
     END AS segment_vente
 FROM lignes_vente;
@@ -27,8 +27,8 @@ FROM (
         quantite * prix_unitaire AS montant_brut,
         CASE 
             WHEN quantite IS NULL OR prix_unitaire IS NULL THEN 'Non classe'
-            WHEN quantite * prix_unitaire < 100 THEN 'Faible'
-            WHEN quantite * prix_unitaire < 500 THEN 'Moyen'
+            WHEN quantite * prix_unitaire < 5 THEN 'Faible'
+            WHEN quantite * prix_unitaire < 10 THEN 'Moyen'
             ELSE 'Eleve'
         END AS segment_vente
     FROM lignes_vente
@@ -44,10 +44,10 @@ ORDER BY
 
 -- Indicateurs conditionnels multiples (lignes et montants)
 SELECT 
-    SUM(CASE WHEN quantite * prix_unitaire < 100 THEN 1 ELSE 0 END) AS nb_faibles,
-    SUM(CASE WHEN quantite * prix_unitaire >= 100 AND quantite * prix_unitaire < 500 THEN 1 ELSE 0 END) AS nb_moyennes,
-    SUM(CASE WHEN quantite * prix_unitaire >= 500 THEN 1 ELSE 0 END) AS nb_elevees,
-    SUM(CASE WHEN quantite * prix_unitaire >= 500 THEN quantite * prix_unitaire ELSE 0 END) AS montant_elevees
+    SUM(CASE WHEN quantite * prix_unitaire < 5 THEN 1 ELSE 0 END) AS nb_faibles,
+    SUM(CASE WHEN quantite * prix_unitaire >= 5 AND quantite * prix_unitaire < 10 THEN 1 ELSE 0 END) AS nb_moyennes,
+    SUM(CASE WHEN quantite * prix_unitaire >= 10 THEN 1 ELSE 0 END) AS nb_elevees,
+    SUM(CASE WHEN quantite * prix_unitaire >= 10 THEN quantite * prix_unitaire ELSE 0 END) AS montant_elevees
 FROM lignes_vente;
 
 -- Segmenter les commandes globales (agrégation par id_vente)
@@ -55,8 +55,8 @@ SELECT
     id_vente,
     SUM(quantite * prix_unitaire) AS montant_commande,
     CASE 
-        WHEN SUM(quantite * prix_unitaire) < 100 THEN 'Faible'
-        WHEN SUM(quantite * prix_unitaire) < 500 THEN 'Moyenne'
+        WHEN SUM(quantite * prix_unitaire) < 5 THEN 'Faible'
+        WHEN SUM(quantite * prix_unitaire) < 10 THEN 'Moyenne'
         ELSE 'Elevee'
     END AS segment_commande
 FROM lignes_vente

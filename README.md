@@ -46,6 +46,7 @@ Le challenge repose sur un schéma e-commerce et retail complet composé de **7 
 * **Jour 18** : Calcul des KPI business (Chiffre d'affaires brut/net, panier moyen via sous-requête, taux de remise global pondéré).
 * **Jour 19** : Dates et analyse temporelle (extraction d'année, mois, jour avec `EXTRACT`/`DATE_TRUNC`, bornes exclusives).
 - **Jour 20** : `CASE WHEN`, création de segments et indicateurs conditionnels.
+- **Jour 21** : Consolidation de la Semaine 3 et production d'un mini-tableau de bord SQL.
 
 ---
 

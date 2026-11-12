@@ -42,3 +42,4 @@ Ce fichier retrace l'état d'avancement quotidien du challenge **SQL for All**, 
 - [x] **Jour 18** : KPI et indicateurs business (Chiffre d'affaires, panier moyen, taux de remise)
 - [x] **Jour 19** : Dates et analyse temporelle (Ventes par jour, mois et année)
 - [x] **Jour 20** : `CASE WHEN`, création de segments et indicateurs conditionnels
+- [x] **Jour 21** : Consolidation de la Semaine 3 et mini-tableau de bord
