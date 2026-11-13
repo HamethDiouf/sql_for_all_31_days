@@ -10,7 +10,7 @@ Ce fichier retrace l'état d'avancement quotidien du challenge **SQL for All**, 
 | :--- | :--- | :--- | :--- |
 | **Semaine 1** | Fondations, Filtrage & Tris | **Terminée** | 7 / 7 |
 | **Semaine 2** | Joindre les Données & Cardinalités | **Terminée** | 7 / 7 |
-| **Semaine 3** | Agréger, KPI & Analyse Temporelle | **Terminée** | 5 / 17 | 
+| **Semaine 3** | Agréger, KPI & Analyse Temporelle | **Terminée** | 7 / 7 | 
 | **Semaine 4** | Analyses Avancées & Automatisation | **En cours** | 1 / 10 |
 
 ---
