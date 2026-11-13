@@ -39,7 +39,7 @@ Le challenge repose sur un schéma e-commerce et retail complet composé de **7 
 * **Jours 12 à 13** : Audit d'écarts avec `RIGHT/FULL OUTER JOIN`, gestion des doublons et cardinalités (1-N, N-M).
 * **Jour 14** : Consolidation et restitution de la Vue Complète des Ventes RetailPlus.
 
-### 🔹 Semaine 3 : Agréger les Données & Pilotage (Jours 15 à 21) — *En cours (Jour 19)*
+### 🔹 Semaine 3 : Agréger les Données & Pilotage (Jours 15 à 21) — *Terminée*
 * **Jour 15** : Fonctions d'agrégation (`COUNT(*)`, `COUNT(colonne)`, `COUNT(DISTINCT)`, `SUM`, `AVG`, `MIN`, `MAX`).
 * **Jour 16** : Regroupements par dimension avec `GROUP BY` (règle des colonnes non agrégées).
 * **Jour 17** : Filtrage des groupes avec `HAVING` vs filtrage des lignes avec `WHERE`.
@@ -47,6 +47,9 @@ Le challenge repose sur un schéma e-commerce et retail complet composé de **7 
 * **Jour 19** : Dates et analyse temporelle (extraction d'année, mois, jour avec `EXTRACT`/`DATE_TRUNC`, bornes exclusives).
 - **Jour 20** : `CASE WHEN`, création de segments et indicateurs conditionnels.
 - **Jour 21** : Consolidation de la Semaine 3 et production d'un mini-tableau de bord SQL.
+
+### 🔹 Semaine 4 : Analyses Avancées & Automatisation (Jours 22 à 31) — *En cours (Jour 22)*
+- **Jour 22** : Introduction aux sous-requêtes (Scalaires, `IN`, `EXISTS`, `NOT IN`, `NOT EXISTS`, Tables dérivées).
 
 ---
 
@@ -79,6 +82,7 @@ sql_for_all_31_days/
 ├── day_19/              # Jour 19 : Dates et analyse temporelle
 ├── day_20/              # Jour 20 : CASE WHEN et segmentation
 ├── day_21/              # Jour 21 : Consolidation Semaine 3 et mini-tableau de bord
+├── day_22/              # Jour 22 : Introduction aux sous-requêtes
 ├── resources/           # Ressources et datasets du challenge
 ├── PROGRESS.md          # Suivi détaillé de l'avancement
 └── README.md            # Documentation du projet

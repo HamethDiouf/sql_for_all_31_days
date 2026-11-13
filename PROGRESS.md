@@ -10,8 +10,8 @@ Ce fichier retrace l'état d'avancement quotidien du challenge **SQL for All**, 
 | :--- | :--- | :--- | :--- |
 | **Semaine 1** | Fondations, Filtrage & Tris | **Terminée** | 7 / 7 |
 | **Semaine 2** | Joindre les Données & Cardinalités | **Terminée** | 7 / 7 |
-| **Semaine 3** | Agréger, KPI & Analyse Temporelle | **En cours** | 5 / 17 |
-| **Semaine 4** | Analyses Avancées & Automatisation | **À venir** | 0 / 0 |
+| **Semaine 3** | Agréger, KPI & Analyse Temporelle | **Terminée** | 5 / 17 | 
+| **Semaine 4** | Analyses Avancées & Automatisation | **En cours** | 1 / 10 |
 
 ---
 
@@ -43,3 +43,6 @@ Ce fichier retrace l'état d'avancement quotidien du challenge **SQL for All**, 
 - [x] **Jour 19** : Dates et analyse temporelle (Ventes par jour, mois et année)
 - [x] **Jour 20** : `CASE WHEN`, création de segments et indicateurs conditionnels
 - [x] **Jour 21** : Consolidation de la Semaine 3 et mini-tableau de bord
+
+### 🔹 Semaine 4 : Analyses Avancées & Automatisation
+- [x] **Jour 22** : Introduction aux sous-requêtes (Scalaires, `IN`, `EXISTS`, Tables dérivées)
