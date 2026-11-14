@@ -50,6 +50,7 @@ Le challenge repose sur un schéma e-commerce et retail complet composé de **7 
 
 ### 🔹 Semaine 4 : Analyses Avancées & Automatisation (Jours 22 à 31) — *En cours (Jour 22)*
 - **Jour 22** : Introduction aux sous-requêtes (Scalaires, `IN`, `EXISTS`, `NOT IN`, `NOT EXISTS`, Tables dérivées).
+- **Jour 23** : Structurer les requêtes longues avec des CTE (`WITH`).
 
 ---
 
@@ -83,6 +84,7 @@ sql_for_all_31_days/
 ├── day_20/              # Jour 20 : CASE WHEN et segmentation
 ├── day_21/              # Jour 21 : Consolidation Semaine 3 et mini-tableau de bord
 ├── day_22/              # Jour 22 : Introduction aux sous-requêtes
+├── day_22/              # Jour 23 : Structurer les requêtes longues avec des CTE (WITH)
 ├── resources/           # Ressources et datasets du challenge
 ├── PROGRESS.md          # Suivi détaillé de l'avancement
 └── README.md            # Documentation du projet
