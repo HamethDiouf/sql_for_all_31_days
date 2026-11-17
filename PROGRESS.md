@@ -11,7 +11,7 @@ Ce fichier retrace l'état d'avancement quotidien du challenge **SQL for All**, 
 | **Semaine 1** | Fondations, Filtrage & Tris | **Terminée** | 7 / 7 |
 | **Semaine 2** | Joindre les Données & Cardinalités | **Terminée** | 7 / 7 |
 | **Semaine 3** | Agréger, KPI & Analyse Temporelle | **Terminée** | 7 / 7 | 
-| **Semaine 4** | Analyses Avancées & Automatisation | **En cours** | 2 / 10 |
+| **Semaine 4** | Analyses Avancées & Automatisation | **En cours** | 3 / 10 |
 
 ---
 
@@ -47,3 +47,4 @@ Ce fichier retrace l'état d'avancement quotidien du challenge **SQL for All**, 
 ### 🔹 Semaine 4 : Analyses Avancées & Automatisation
 - [x] **Jour 22** : Introduction aux sous-requêtes (Scalaires, `IN`, `EXISTS`, Tables dérivées)
 - [x] **Jour 23** : Structurer les requêtes longues avec des CTE (`WITH`)
+- [x] **Jour 24** : `ROW_NUMBER()`, `RANK()` et `DENSE_RANK()` (Classer les lignes et gérer les ex æquo)
