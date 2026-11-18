@@ -52,6 +52,7 @@ Le challenge repose sur un schéma e-commerce et retail complet composé de **7 
 - **Jour 22** : Introduction aux sous-requêtes (Scalaires, `IN`, `EXISTS`, `NOT IN`, `NOT EXISTS`, Tables dérivées).
 - **Jour 23** : Structurer les requêtes longues avec des CTE (`WITH`).
 - **Jour 24** : `ROW_NUMBER()`, `RANK()` et `DENSE_RANK()` (Classement, ex æquo et fenêtrage `PARTITION BY`).
+- **Jour 25** : `PARTITION BY` (Calculer par groupe sans perdre le détail des lignes, parts relatives et cumuls `ROWS BETWEEN`).
 
 ---
 
@@ -87,6 +88,7 @@ sql_for_all_31_days/
 ├── day_22/              # Jour 22 : Introduction aux sous-requêtes
 ├── day_23/              # Jour 23 : Structurer les requêtes longues avec des CTE (WITH)
 ├── day_24/              # Jour 24 : ROW_NUMBER(), RANK() et DENSE_RANK()
+├── day_25/              # Jour 25 : PARTITION BY (Agrégations fenêtrées, parts relatives et cumuls)
 ├── resources/           # Ressources et datasets du challenge
 ├── PROGRESS.md          # Suivi détaillé de l'avancement
 └── README.md            # Documentation du projet
