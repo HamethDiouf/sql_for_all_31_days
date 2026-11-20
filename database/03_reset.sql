@@ -156,7 +156,24 @@ INSERT INTO ventes VALUES
 (7, 8, 4, '2026-02-09', 'Carte'),
 (8, 10, 1, '2026-02-14', 'Especes'),
 (9, 1, 1, '2026-02-20', 'Carte'),
-(10, 3, 3, '2026-02-25', 'Carte');
+(10, 3, 3, '2026-02-25', 'Carte'),
+-- Ajout Jour 26 (2024-10 à 2026-05) pour créer des écarts calendaires et tester les fonctions temporelles
+(11, 1,  1, '2024-10-12', 'Carte'),    -- Ajout J26 (2024-10)
+(12, 2,  2, '2024-11-08', 'Especes'),  -- Ajout J26 (2024-11)
+(13, 4,  1, '2024-11-22', 'Carte'),    -- Ajout J26 (2024-11)
+(14, 7,  3, '2024-12-14', 'Cheque'),   -- Ajout J26 (2024-12)
+(15, 8,  4, '2024-12-27', 'Carte'),    -- Ajout J26 (2024-12)
+-- Ajout Jour 26 (2025-01 à 2025-12) pour créer des écarts calendaires et tester les fonctions temporelles
+(16, 3,  3, '2025-02-11', 'Carte'),    -- Ajout J26 (2025-02)
+(17, 5,  2, '2025-05-18', 'Especes'),  -- Ajout J26 (2025-05)
+(18, 10, 1, '2025-08-09', 'Carte'),    -- Ajout J26 (2025-08)
+(19, 1,  1, '2025-11-15', 'Carte'),    -- Ajout J26 (2025-11)
+(20, 2,  2, '2025-12-20', 'Cheque'),   -- Ajout J26 (2025-12)
+-- Ajout Jour 26 (2026-01 à 2026-05) pour créer des écarts calendaires et tester les fonctions temporelles
+(21, 4,  1, '2026-04-05', 'Carte'),    -- Ajout J26 (2026-04 ; 2026-03 absent)
+(22, 3,  3, '2026-04-19', 'Especes'),  -- Ajout J26 (2026-04)
+(23, 5,  2, '2026-05-07', 'Carte'),    -- Ajout J26 (2026-05)
+(24, 8,  4, '2026-05-24', 'Carte');   -- Ajout J26 (2026-05)
 
 -- F. Lignes de vente (22 lignes de détail)
 INSERT INTO lignes_vente VALUES
@@ -181,7 +198,28 @@ INSERT INTO lignes_vente VALUES
 (19, 9, 3, 1, 1.05, NULL),
 (20, 10, 7, 1, 0.80, NULL),
 (21, 10, 9, 2, 1.60, NULL),
-(22, 10, 11, 1, 1.90, NULL);
+(22, 10, 11, 1, 1.90, NULL),
+-- [J26 - Détail ventes 2024] Lignes associées aux tickets 11..15
+(23, 11, 1,  4, 1.10, NULL), -- J26 (vente 11, 2024-10)
+(24, 11, 8,  2, 3.50, NULL), -- J26 (vente 11, 2024-10)
+(25, 12, 9,  3, 1.60, NULL), -- J26 (vente 12, 2024-11)
+(26, 13, 6,  5, 2.00, 10),   -- J26 (vente 13, 2024-11)
+(27, 14, 12, 4, 2.90, NULL), -- J26 (vente 14, 2024-12)
+(28, 15, 10, 3, 2.40, NULL), -- J26 (vente 15, 2024-12)
+(29, 15, 13, 4, 2.60, 5),    -- J26 (vente 15, 2024-12)
+-- [J26 - Détail ventes 2025] Lignes associées aux tickets 16..20
+(30, 16, 2,  6, 1.20, NULL), -- J26 (vente 16, 2025-02)
+(31, 17, 4,  4, 2.30, NULL), -- J26 (vente 17, 2025-05)
+(32, 17, 7, 10, 0.80, NULL), -- J26 (vente 17, 2025-05)
+(33, 18, 8,  3, 3.50, 10),   -- J26 (vente 18, 2025-08)
+(34, 19, 11, 5, 1.90, NULL), -- J26 (vente 19, 2025-11)
+(35, 20, 14, 4, 1.95, NULL), -- J26 (vente 20, 2025-12)
+(36, 20, 15, 2, 2.75, NULL), -- J26 (vente 20, 2025-12)
+-- [J26 - Détail ventes 2026] Lignes associées aux tickets 21..24 (avril–mai 2026)
+(37, 21, 1,  5, 1.10, NULL), -- J26 (vente 21, 2026-04)
+(38, 22, 9,  4, 1.60, NULL), -- J26 (vente 22, 2026-04)
+(39, 23, 6,  6, 2.00, 10),   -- J26 (vente 23, 2026-05)
+(40, 24, 12, 3, 2.90, NULL); -- J26 (vente 24, 2026-05)
 
 -- G. Emplacements (Localisation dans les magasins)
 INSERT INTO emplacements VALUES
