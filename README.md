@@ -53,6 +53,7 @@ Le challenge repose sur un schéma e-commerce et retail complet composé de **7 
 - **Jour 23** : Structurer les requêtes longues avec des CTE (`WITH`).
 - **Jour 24** : `ROW_NUMBER()`, `RANK()` et `DENSE_RANK()` (Classement, ex æquo et fenêtrage `PARTITION BY`).
 - **Jour 25** : `PARTITION BY` (Calculer par groupe sans perdre le détail des lignes, parts relatives et cumuls `ROWS BETWEEN`).
+- **Jour 26** : Analyse temporelle avec `LAG()`, `LEAD()`, variations absolues/relatives, sommes cumulées (`ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW`), moyennes mobiles (`ROWS BETWEEN 2 PRECEDING AND CURRENT ROW`) et gestion des trous calendaires (enrichissement des ventes 2024–2026 avec mars 2026 absent).
 
 ---
 
@@ -89,6 +90,7 @@ sql_for_all_31_days/
 ├── day_23/              # Jour 23 : Structurer les requêtes longues avec des CTE (WITH)
 ├── day_24/              # Jour 24 : ROW_NUMBER(), RANK() et DENSE_RANK()
 ├── day_25/              # Jour 25 : PARTITION BY (Agrégations fenêtrées, parts relatives et cumuls)
+├── day_26/              # Jour 26 : LAG(), LEAD(), sommes cumulées et moyennes mobiles
 ├── resources/           # Ressources et datasets du challenge
 ├── PROGRESS.md          # Suivi détaillé de l'avancement
 └── README.md            # Documentation du projet
