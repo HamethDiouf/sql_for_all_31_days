@@ -11,7 +11,7 @@ Ce fichier retrace l'état d'avancement quotidien du challenge **SQL for All**, 
 | **Semaine 1** | Fondations, Filtrage & Tris | **Terminée** | 7 / 7 |
 | **Semaine 2** | Joindre les Données & Cardinalités | **Terminée** | 7 / 7 |
 | **Semaine 3** | Agréger, KPI & Analyse Temporelle | **Terminée** | 7 / 7 | 
-| **Semaine 4** | Analyses Avancées & Automatisation | **En cours** | 6 / 10 |
+| **Semaine 4** | Analyses Avancées & Automatisation | **En cours** | 7 / 10 |
 
 ---
 
@@ -51,3 +51,4 @@ Ce fichier retrace l'état d'avancement quotidien du challenge **SQL for All**, 
 - [x] **Jour 25** : `PARTITION BY` (Calculer par groupe sans perdre le détail des lignes)
 - [x] **Jour 26** : `LAG()`, `LEAD()`, cumuls & moyennes mobiles | ✅ Validé | Jeu enrichi 2024–2026, protection `NULLIF`, cadre `ROWS`, mois absent (`2026-03`)
 - [x] **Jour 27** : Problèmes analytiques réels | ✅ Validé | Démarche en 6 étapes, arbitrages d'outils SQL, contrôles de jointure et limites d'interprétation 
+- [x] **Jour 28** : Consolidation & Grand Challenge Analytique | ✅ Validé | CTE multi-étapes, `PARTITION BY categorie`, `LAG()`, contrôle cardinalité et limites volume/valeur 

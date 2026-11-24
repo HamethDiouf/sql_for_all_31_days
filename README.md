@@ -55,6 +55,7 @@ Le challenge repose sur un schéma e-commerce et retail complet composé de **7 
 - **Jour 25** : `PARTITION BY` (Calculer par groupe sans perdre le détail des lignes, parts relatives et cumuls `ROWS BETWEEN`).
 - **Jour 26** : Analyse temporelle avec `LAG()`, `LEAD()`, variations absolues/relatives, sommes cumulées (`ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW`), moyennes mobiles (`ROWS BETWEEN 2 PRECEDING AND CURRENT ROW`) et gestion des trous calendaires (enrichissement des ventes 2024–2026 avec mars 2026 absent).
 - **Jour 27** : Résolution de cas analytiques complets (*Demande → Indicateur → Données → Requête → Contrôle → Conclusion*) et diagnostic de granularité / cardinalité.
+- **Jour 28** : Consolidation et Grand Challenge Analytique combinant CTE, jointures contrôlées, `DENSE_RANK()`, `PARTITION BY` (classement par catégorie) et `LAG()` avec vérification de granularité et limites métier.
 
 ---
 
@@ -93,6 +94,7 @@ sql_for_all_31_days/
 ├── day_25/              # Jour 25 : PARTITION BY (Agrégations fenêtrées, parts relatives et cumuls)
 ├── day_26/              # Jour 26 : LAG(), LEAD(), sommes cumulées et moyennes mobiles
 ├── day_27/              # Jour 27 : Problèmes analytiques réels (Bout en bout)
+├── day_28/              # Jour 28 : Consolidation et Grand Challenge Analytique
 ├── resources/           # Ressources et datasets du challenge
 ├── PROGRESS.md          # Suivi détaillé de l'avancement
 └── README.md            # Documentation du projet
