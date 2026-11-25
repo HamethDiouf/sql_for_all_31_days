@@ -17,7 +17,7 @@ Bienvenue sur mon dépôt de suivi du challenge **SQL for All (31 jours)** ! Ce 
 
 Le challenge repose sur un schéma e-commerce et retail complet composé de **7 tables interconnectées** :
 
-1. **`clients`** : Informations sur la clientèle (`id_client`, `prenom`, `nom`, `email`, `ville`, `age`, `date_inscription`).
+1. **`clients`** : Informations sur la clientèle (`id_client`, `prenom`, `nom`, `email`, `ville`, `age`).
 2. **`magasins`** : Implantation, surfaces et détails des points de vente (`id_magasin`, `nom_magasin`, `ville`, `region`, `surface_m2`).
 3. **`categories`** : Taxonomie des produits (`id_categorie`, `nom_categorie`, `rayon`).
 4. **`produits`** : Catalogue articles et rattachement par catégorie (`id_produit`, `nom_produit`, `id_categorie`, `prix`).
