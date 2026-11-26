@@ -57,7 +57,8 @@ Le challenge repose sur un schéma e-commerce et retail complet composé de **7 
 - **Jour 27** : Résolution de cas analytiques complets (*Demande → Indicateur → Données → Requête → Contrôle → Conclusion*) et diagnostic de granularité / cardinalité.
 - **Jour 28** : Consolidation et Grand Challenge Analytique combinant CTE, jointures contrôlées, `DENSE_RANK()`, `PARTITION BY` (classement par catégorie) et `LAG()` avec vérification de granularité et limites métier.
 - **Jour 29** : Contrôle qualité avant analyse client (doublons exacts/potentiels, `NULL` vs chaîne vide, valeurs aberrantes, cohérence des totaux/orphelines et rapprochement par identifiant canonique).
-- **Jour 30** : Performance SQL (requêtes sargables, index *clustered* / *nonclustered* / couvrants `INCLUDE`, `Seek` vs `Scan`, lecture des plans d'exécution et mesures avant/après avec vérification d'égalité des résultats).
+- **Jour 30 — Performance SQL (`day_30/`)** : Optimisation des requêtes, lecture des plans d'exécution, index (*clustered*, *nonclustered*, index couvrants avec `INCLUDE`), distinction *Seek* vs *Scan*, écriture *sargable* et comparaison des résultats (`EXCEPT` + totaux/comptages) sur une table de test isolée (`perf_lignes_vente`).
+  - **Sous-dossier `day_30/assets/`** : contient le diagramme `plan-execution-operateurs.png` (repère visuel des opérateurs *Index Seek*, *Index Scan*, *Nested Loops*, *Sort*, *Hash Match* et *SELECT*) ainsi que le guide `sql-server-vs-postgresql.md` qui traduit les commandes et mesures du support SQL Server (`SET STATISTICS IO / TIME`, `Ctrl+L` / `Ctrl+M`) vers PostgreSQL (`EXPLAIN (ANALYZE, BUFFERS)`).
 
 ---
 
@@ -99,6 +100,11 @@ sql_for_all_31_days/
 ├── day_28/              # Jour 28 : Consolidation et Grand Challenge Analytique
 ├── day_29/              # Jour 29 : Qualité et fiabilité des données (Analyse client)
 ├── day_30/              # Jour 30 : Performance SQL (Index, plans d'exécution et optimisation)
+│   ├── challenge.md     # Énoncé et objectifs du Jour 30
+│   ├── solution.sql     # Requêtes d'optimisation, banc d'essai perf_lignes_vente et mesures
+│   └── assets/          # Ressources visuelles et notes d'adaptation
+│       ├── plan-execution-operateurs.png
+│       └── sql-server-vs-postgresql.md
 ├── resources/           # Ressources et datasets du challenge
 ├── PROGRESS.md          # Suivi détaillé de l'avancement
 └── README.md            # Documentation du projet
