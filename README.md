@@ -57,6 +57,7 @@ Le challenge repose sur un schéma e-commerce et retail complet composé de **7 
 - **Jour 27** : Résolution de cas analytiques complets (*Demande → Indicateur → Données → Requête → Contrôle → Conclusion*) et diagnostic de granularité / cardinalité.
 - **Jour 28** : Consolidation et Grand Challenge Analytique combinant CTE, jointures contrôlées, `DENSE_RANK()`, `PARTITION BY` (classement par catégorie) et `LAG()` avec vérification de granularité et limites métier.
 - **Jour 29** : Contrôle qualité avant analyse client (doublons exacts/potentiels, `NULL` vs chaîne vide, valeurs aberrantes, cohérence des totaux/orphelines et rapprochement par identifiant canonique).
+- **Jour 30** : Performance SQL (requêtes sargables, index *clustered* / *nonclustered* / couvrants `INCLUDE`, `Seek` vs `Scan`, lecture des plans d'exécution et mesures avant/après avec vérification d'égalité des résultats).
 
 ---
 
@@ -97,6 +98,7 @@ sql_for_all_31_days/
 ├── day_27/              # Jour 27 : Problèmes analytiques réels (Bout en bout)
 ├── day_28/              # Jour 28 : Consolidation et Grand Challenge Analytique
 ├── day_29/              # Jour 29 : Qualité et fiabilité des données (Analyse client)
+├── day_30/              # Jour 30 : Performance SQL (Index, plans d'exécution et optimisation)
 ├── resources/           # Ressources et datasets du challenge
 ├── PROGRESS.md          # Suivi détaillé de l'avancement
 └── README.md            # Documentation du projet
