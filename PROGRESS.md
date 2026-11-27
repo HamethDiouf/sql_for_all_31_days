@@ -11,7 +11,7 @@ Ce fichier retrace l'état d'avancement quotidien du challenge **SQL for All**, 
 | **Semaine 1** | Fondations, Filtrage & Tris | **Terminée** | 7 / 7 |
 | **Semaine 2** | Joindre les Données & Cardinalités | **Terminée** | 7 / 7 |
 | **Semaine 3** | Agréger, KPI & Analyse Temporelle | **Terminée** | 7 / 7 | 
-| **Semaine 4** | Analyses Avancées & Automatisation | **En cours** | 9 / 10 |
+| **Semaine 4** | Analyses Avancées & Automatisation | **Terminée** | 10 / 10 |
 
 ---
 
@@ -54,3 +54,4 @@ Ce fichier retrace l'état d'avancement quotidien du challenge **SQL for All**, 
 - [x] **Jour 28** : Consolidation & Grand Challenge Analytique | ✅ Validé | CTE multi-étapes, `PARTITION BY categorie`, `LAG()`, contrôle cardinalité et limites volume/valeur
 - [x] **Jour 29** : Qualité & fiabilité des données | ✅ Validé | Détection doublons, `NULL` vs vide, anomalies, réconciliation totaux & analyse client canonique 
 - [x] **Jour 30** : Performance SQL | ✅ Validé | Sargabilité, index couvrants (`INCLUDE`), plans d'exécution, mesures avant/après & preuve d'identité
+- [x] **Jour 31** : Grand Challenge Final — Analyse client de bout en bout en 9 phases *(Structure initialisee, execution des phases en cours)*

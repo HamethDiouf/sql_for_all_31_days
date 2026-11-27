@@ -59,6 +59,7 @@ Le challenge repose sur un schéma e-commerce et retail complet composé de **7 
 - **Jour 29** : Contrôle qualité avant analyse client (doublons exacts/potentiels, `NULL` vs chaîne vide, valeurs aberrantes, cohérence des totaux/orphelines et rapprochement par identifiant canonique).
 - **Jour 30 — Performance SQL (`day_30/`)** : Optimisation des requêtes, lecture des plans d'exécution, index (*clustered*, *nonclustered*, index couvrants avec `INCLUDE`), distinction *Seek* vs *Scan*, écriture *sargable* et comparaison des résultats (`EXCEPT` + totaux/comptages) sur une table de test isolée (`perf_lignes_vente`).
   - **Sous-dossier `day_30/assets/`** : contient le diagramme `plan-execution-operateurs.png` (repère visuel des opérateurs *Index Seek*, *Index Scan*, *Nested Loops*, *Sort*, *Hash Match* et *SELECT*) ainsi que le guide `sql-server-vs-postgresql.md` qui traduit les commandes et mesures du support SQL Server (`SET STATISTICS IO / TIME`, `Ctrl+L` / `Ctrl+M`) vers PostgreSQL (`EXPLAIN (ANALYZE, BUFFERS)`).
+- **Jour 31 — Grand Challenge Final (`day_31/`)** : Demarche complete d'analyste BI en 9 phases sur `SQL_FOR_ALL_RetailPlus` (du besoin metier a la restitution Power BI et aux recommandations), organisee avec des sous-dossiers dedies (`definitions/`, `controles_qualites/`, `optimisation/`, `recommandation/`).
 
 ---
 
@@ -105,6 +106,23 @@ sql_for_all_31_days/
 │   └── assets/          # Ressources visuelles et notes d'adaptation
 │       ├── plan-execution-operateurs.png
 │       └── sql-server-vs-postgresql.md
+├── day_31/                    # Jour 31 : Grand Challenge Final — Analyse client de bout en bout
+│   ├── challenge.md           # Enonce, regles et suivi des 9 phases
+│   ├── phase_01_besoin.md     # Phase 1 : Reformulation, questions metier et perimetre
+│   ├── phase_02_04_audit.sql  # Phases 2 & 4 : Exploration schema PostgreSQL et controles qualite
+│   ├── phase_05_07_analyse.sql # Phases 5 a 7 : Analyse client, reconciliation et optimisation
+│   ├── restitution_bi.md      # Phase 8 : Modele en etoile Power BI et repartition SQL / DAX
+│   ├── definitions/           # Definitions metier et dictionnaire des KPI
+│   │   ├── definitions_metier.md
+│   │   └── dictionnaire_kpi.md
+│   ├── controles_qualites/    # Regles de qualite et scripts de diagnostic SQL
+│   │   ├── regles_qualite.md
+│   │   └── audit_qualite.sql
+│   ├── optimisation/          # Requetes avant/apres et releves EXPLAIN (ANALYZE, BUFFERS)
+│   │   ├── requete_avant_apres.sql
+│   │   └── mesures_performance.md
+│   └── recommandation/        # Restitution direction (faits, hypotheses, recommandations)
+│       └── recommandations_direction.md
 ├── resources/           # Ressources et datasets du challenge
 ├── PROGRESS.md          # Suivi détaillé de l'avancement
 └── README.md            # Documentation du projet
